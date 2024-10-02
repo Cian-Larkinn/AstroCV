@@ -1,0 +1,407 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cSharp Projects</title>
+</head>
+<body> 
+    <nav>
+        <div class="nav-contrainer">
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+        </div>
+
+                    <ul class="Navbar">
+                        <li><a href="/">Home</a></li>
+        <li><a href="/projects">Projects</a></li>
+                    </ul>
+                </nav>
+
+
+                <div class="cs-header">
+                    <h2 class="csharp-title">&lt;My C-Sharp Projects/&gt;</h2>
+                </div>
+                <div class="project-container">
+                    <h3 class="project-title"></h3> 
+            
+                    <div class="project-container">
+                        <h3 class="project-title" style="color: orange; font-size: 2rem; margin-top: 10px;">BlackJack</h3>
+                        <div class="project-box">
+                            <div class="video-container">
+                                <video controls style="width: 100%; height: 100%;">
+                                    <source src="path_to_your_video.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="project-text">
+                                <p>This project consists of the game which many may be familiar with, Blackjack. The game rules are similar to the original, the only difference being the ace is always worth 11. The dealer will also be assigned a value between 17-25.</p>
+                                <p>Since it is an over 18's game, I also designed and implemented a registration form which ensures the user is over the age of 18 and has agreed to the terms and conditions. If the user isn't over the age of 18 and/or has not agreed to the terms and conditions, they cannot play.</p>
+                                <p>This project got me a distinction in college.</p>
+                            </div>
+                        </div>
+                    
+                
+                      
+                
+                        <h3 class="project-title" style="color: orange; font-size: 2rem; margin-top: 10px;">Car Database</h3>
+                        <div class="project-box">
+                            <div class="video-container">
+                                <video controls style="width: 100%; height: 100%;">
+                                    <source src="path_to_your_video_2.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="project-text">
+                                <p>In this project, I built a car database using C#. I designed and implemented both the database and the Graphical User Interface (GUI) While the back end is linked to an mySQL database.</p>
+                                <p>The application enables users to easily navigate through specific records using the data controls located in the bottom left corner of the screen. Users have the ability to add, update, and delete records as needed. Additionally, I incorporated a help feature to assist users who may encounter difficulties while using the program.</p>
+                                <p>This project earned me a distinction in college.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+  <footer>
+        <div class="footer-container">
+            <h3 class="footer-heading">&lt;Social Links/&gt;</h3>
+            
+            <div class="footer-socials">
+                <!-- LinkedIn -->
+                <div class="social-item">
+                    <a href="https://www.linkedin.com/in/cian-larkin-483a1532a/" target="_blank">
+                        <img src="images/linkedin.png" alt="LinkedIn" class="social-icon" />
+                        <p class="social-text">LinkedIn</p>
+                    </a>
+                </div>
+                <!-- GitHub -->
+                <div class="social-item">
+                    <a href="https://github.com/yourusername" target="_blank">
+                        <img src="images/github.png" alt="GitHub" class="social-icon" />
+                        <p class="social-text">GitHub</p>
+                    </a>
+                </div>
+                <!-- Add more social links as needed -->
+            </div>
+            <p class="footer-contact">
+                For any queries feel free to contact me at my <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn profile</a> or Email <a href="mailto:CianLarkinn03@gmail.com">CianLarkinn03@gmail.com</a>
+            </p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         
+
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		const navToggle = document.querySelector('.nav-toggle');
+		const navbar = document.querySelector('.Navbar');
+
+		navToggle.addEventListener('click', () => {
+			navbar.classList.toggle('active');
+		});
+	});
+</script>
+
+
+
+
+
+<style>
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #2b29aa, #5c6bc0); /* Dark to light blue gradient */
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    min-height: 100vh; /* Ensure body takes at least full viewport height */
+}
+
+.project-title {
+    font-size: 2.5rem; /* Increase this value to make the title bigger */
+    color: orange; /* Keep the orange color */
+}
+
+nav {
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed; /* Fix it to the top */
+    top: 0;
+    width: 100%; /* Full width */
+    z-index: 10;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.Navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    padding: 0;
+    margin: 0;
+    flex: 1; /* Allow it to take the remaining space */
+}
+
+.Navbar li {
+    margin: 0 25px;
+}
+
+.Navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.nav-toggle {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 0;
+    position: fixed; /* Fixed position to ensure it stays within the screen */
+    right: 15px; /* Reduced right padding */
+    top: 10px; /* Top padding */
+    z-index: 100; /* Ensure it's always on top */
+}
+
+.hamburger {
+    width: 30px; /* Smaller size for mobile */
+    height: 4px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+
+.cs-header {
+    text-align: center;
+}
+
+.csharp-title {
+    font-size: 4rem; /* Larger title */
+    font-weight: bold;
+    color: rgb(255, 165, 0); /* Orange color */
+    margin-bottom: 40px; /* Add space between title and project boxes */
+}
+
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px; /* Increase space between boxes */
+    flex: 1; /* Allow it to take remaining space */
+}
+
+.project-box {
+    width: 1000px; /* Much larger width */
+    height: 400px; /* Slightly increased height */
+    background-color: rgba(155, 137, 104, 0.9); /* Lighter orange background */
+    border: 3px solid rgb(255, 165, 0); /* Orange border */
+    display: flex;
+    align-items: center; /* Center vertically */
+    color: white; /* Set text color to white */
+    font-weight: bold;
+    padding: 20px; /* Add padding */
+}
+
+.video-container {
+    flex: 1; /* Allow video area to grow */
+    max-width: 90%; /* Ensure it takes up half the box */
+}
+
+.project-text {
+    flex: 1; /* Allow text area to grow */
+    font-size: 1rem; /* Smaller text size for project description */
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+    justify-content: center; /* Center text vertically */
+    padding-left: 20px; /* Add space between video and text */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: flex; /* Show toggle button on mobile */
+    }
+
+    .Navbar {
+        display: none; /* Hide Navbar by default on mobile */
+        flex-direction: column; /* Stack menu items vertically */
+        position: absolute; /* Position menu absolute */
+        right: 0; /* Align to the right */
+        top: 60px; /* Adjust top position */
+        background: #2b29aa; /* Background color */
+        width: 100%; /* Full width */
+        padding: 10px 0; /* Padding */
+        z-index: 10; /* Above other elements */
+    }
+
+    .Navbar.active {
+        display: flex; /* Show Navbar when active */
+    }
+}
+
+/* Footer styles */
+footer {
+    color: white; /* Default text color */
+    padding: 20px 0; /* Padding above and below the footer */
+    text-align: center; /* Center-align text */
+}
+
+.footer-container {
+    max-width: 1200px; /* Maximum width for the container */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Padding on the sides */
+}
+
+.footer-heading {
+    font-size: 2rem; /* Font size for the heading */
+    color: orange; /* Matches other orange elements on the page */
+    display: inline-block; /* Keeps heading inline */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.footer-socials {
+    display: flex; /* Flexbox layout for social links */
+    justify-content: center; /* Center the items */
+    gap: 40px; /* Space between icons */
+    margin-top: 20px; /* Space above social links */
+}
+
+.social-item {
+    text-align: center; /* Center-align items */
+}
+
+.social-icon {
+    width: 80px; /* Size for social icons */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space below icons */
+    display: block; /* Block display for the icons */
+}
+
+/* Remove underline from links */
+.social-item a {
+    text-decoration: none; /* No underline */
+    color: inherit; /* Inherit text color from parent */
+}
+
+.social-text {
+    margin: 0; /* Remove default margin */
+    font-size: 1.5rem; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+}
+
+/* Change text color on hover */
+.social-item a:hover .social-text {
+    color: inherit; /* Ensure hover color doesn't change if not styled */
+}
+
+/* New contact information styling */
+.footer-contact {
+    margin-top: 20px; /* Space above the contact text */
+    font-size: 20px; /* Font size for the contact text */
+    color: white; /* Text color */
+}
+
+/* Link styles within the footer */
+.footer-contact a {
+    color: orange; /* Change link color to match theme */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer-contact a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive adjustments for the footer */
+@media (max-width: 768px) {
+    .footer-heading {
+        font-size: 1.5rem; /* Smaller heading on mobile */
+    }
+
+    .social-icon {
+        width: 100px; /* Increased icon size for mobile */
+    }
+
+    .footer-socials {
+        flex-direction: column; /* Stack icons vertically on mobile */
+        align-items: center; /* Center align items */
+        gap: 20px; /* Reduce space between stacked items */
+    }
+
+    .social-text {
+        font-size: 20px; /* Adjust font size for mobile if needed */
+        font-weight: bold; /* Ensure text remains bold */
+    }
+
+    .footer-contact {
+        font-size: 20px; /* Adjust font size for mobile if needed */
+    }
+}
+
+@media (max-width: 768px) {
+    .project-box {
+        width: 90%; /* Reduce width to 90% of the screen */
+        height: auto; /* Allow height to adjust */
+        flex-direction: column; /* Stack video and text vertically on mobile */
+        padding: 15px; /* Slightly reduce padding for mobile */
+    }
+
+    .video-container {
+        width: 100%; /* Ensure video takes full width in smaller screens */
+    }
+
+    .project-text {
+        padding-left: 0; /* Remove padding on mobile for a cleaner look */
+        padding-top: 10px; /* Add some space above the text */
+    }
+}
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</body>
+</html>
+   

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <body>
+        <nav>
+            <div class="nav-container">
+                <button class="nav-toggle">
+                    <div class="hamburger"></div>
+                    <div class="hamburger"></div>
+                    <div class="hamburger"></div>
+                </button>
+                <ul class="Navbar">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                </ul>
+            </div>
+        </nav>
+    
+        <div class="main-content">
+            <div class="projects-header">
+                <h2 class="projects-title">&lt;My Projects/&gt;</h2>
+            </div>
+    
+            <div class="project-container">
+                <div class="project-box">
+                    <img src="images/cSharp1.png" alt="C# Projects" class="project-logo">
+                    <div class="project-text">C# Projects</div>
+                    <div class="project-text">.Net</div>
+                    <a href="/csharp" class="learn-more">Learn More</a> 
+                </div>
+    
+                <div class="project-box">
+                    <img src="images/LarkinTravels.png" alt="Web Projects" class="project-logo">
+                    <div class="project-text">Web Projects</div>
+                    <div class="project-text">HTML CSS JavaScript</div>
+                    <a href="/web" class="learn-more">Learn More</a> 
+                </div>
+    
+                <div class="project-box">
+                    <img src="images/java.png" alt="Java Projects" class="project-logo">
+                    <div class="project-text">Java Projects</div>
+                    <div class="project-text">Object Oriented Programming</div>
+                    <a href="/Java" class="learn-more">Learn More</a>
+                </div>
+            </div>
+        </div>
+    
+        <footer>
+            <div class="footer-container">
+                <h3 class="footer-heading">&lt;Social Links/&gt;</h3>
+                
+                <div class="footer-socials">
+                    <!-- LinkedIn -->
+                    <div class="social-item">
+                        <a href="https://www.linkedin.com/in/cian-larkin-483a1532a/" target="_blank">
+                            <img src="images/linkedin.png" alt="LinkedIn" class="social-icon" />
+                            <p class="social-text">LinkedIn</p>
+                        </a>
+                    </div>
+                    <!-- GitHub -->
+                    <div class="social-item">
+                        <a href="https://github.com/yourusername" target="_blank">
+                            <img src="images/github.png" alt="GitHub" class="social-icon" />
+                            <p class="social-text">GitHub</p>
+                        </a>
+                    </div>
+                   
+                    <!-- Add more social links as needed -->
+                </div>
+                <p class="footer-contact">
+                    For any queries feel free to contact me at my <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn profile</a> or Email <a href="mailto:CianLarkinn03@gmail.com">CianLarkinn03@gmail.com</a>
+                </p>
+            </div>
+        </footer>
+    
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const navToggle = document.querySelector('.nav-toggle');
+                const navbar = document.querySelector('.Navbar');
+    
+                navToggle.addEventListener('click', () => {
+                    navbar.classList.toggle('active');
+                });
+            });
+        </script>
+    
+
+
+
+
+
+    
+</body>
+</html>
+
+<style>
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Ensure the body takes at least full viewport height */
+    background: linear-gradient(to bottom, #2b29aa, #5c6bc0);
+    overflow-x: hidden;
+}
+
+/* Navbar styles */
+nav {
+    background: #2b29aa;
+    color: #fff;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.Navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    padding: 0;
+    margin: 0;
+    flex: 1; /* Allow it to take the remaining space */
+}
+
+.Navbar li {
+    margin: 0 25px;
+}
+
+.Navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.nav-toggle {
+    display: none; /* Hidden by default */
+    flex-direction: column; /* Stack hamburger bars */
+    cursor: pointer; /* Pointer cursor on hover */
+    background: transparent; /* Make background transparent */
+    border: none; /* Remove border */
+    padding: 0; /* Remove padding */
+    position: absolute; /* Position it at the top right */
+    right: 20px; /* Align to the right */
+    top: 10px; /* Position from top */
+}
+
+.hamburger {
+    width: 35px; /* Set width for each line */
+    height: 4px; /* Set height for each line */
+    background-color: white; /* Color of hamburger lines */
+    margin: 4px 0; /* Spacing between lines */
+    transition: 0.4s; /* Transition for animations if needed */
+}
+
+.projects-header {
+    text-align: center;
+    margin: 50px 0; /* Adds some vertical space */
+}
+
+.projects-title {
+    font-size: 3rem; /* Larger font size for the title */
+    font-weight: bold;
+    color: rgb(219, 170, 36); /* Set the title color */
+}
+
+/* Project boxes styles */
+.project-container {
+    display: flex;
+    justify-content: center; /* Center the boxes horizontally */
+    flex-wrap: wrap; /* Allow boxes to wrap */
+    gap: 60px; /* Space between boxes */
+    padding: 150px; /* Padding around the container */
+}
+
+.project-box {
+    border: 3px solid #FF8C00; /* Dark orange border */
+    border-radius: 8px; /* Optional: adds rounded corners */
+    padding: 0; /* Remove padding to allow image to fill */
+    text-align: center; /* Center align text */
+    flex: 0 1 300px; /* Set fixed width and allow to shrink */
+    height: 400px; /* Set a fixed height for the boxes */
+    display: flex; /* Use flexbox in project box */
+    flex-direction: column; /* Align items in a column */
+    justify-content: space-between; /* Space items evenly */
+    box-sizing: border-box; /* Include padding and borders in width and height */
+}
+
+.project-logo {
+    width: 100%; /* Make the image take the full width of the box */
+    height: 100%; /* Make the image take the full height of the box */
+    object-fit: cover; /* Cover the box without stretching */
+    border-top-left-radius: 8px; /* Match the box border radius */
+    border-top-right-radius: 8px; /* Match the box border radius */
+}
+
+.project-text {
+    color: white; /* Set text color to white */
+    font-weight: bold; /* Make text bold */
+    text-align: center; /* Center the text */
+    font-size: 20px;
+}
+
+/* Adjust learn-more button placement */
+.learn-more {
+    display: inline-block; /* Make the link behave like a block element */
+    background-color: orange; /* Orange background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make text bold */
+    margin-top: auto; /* Push the button to the bottom */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.learn-more:hover {
+    background-color: darkorange; /* Darker orange on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: flex; /* Show toggle button on mobile */
+    }
+
+    .Navbar {
+        display: none; /* Hide Navbar by default on mobile */
+        flex-direction: column; /* Stack menu items vertically */
+        position: absolute; /* Position menu absolute */
+        right: 0; /* Align to the right */
+        top: 60px; /* Adjust top position */
+        background: #2b29aa; /* Background color */
+        width: 100%; /* Full width */
+        padding: 10px 0; /* Padding */
+        z-index: 10; /* Above other elements */
+    }
+
+    .Navbar.active {
+        display: flex; /* Show Navbar when active */
+    }
+}
+
+/* Footer styles */
+footer {
+    color: white; /* Default text color */
+    padding: 40px 0; /* Padding above and below the footer */
+    text-align: center; /* Center-align text */
+}
+
+.footer-container {
+    max-width: 1200px; /* Maximum width for the container */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Padding on the sides */
+}
+
+.footer-heading {
+    font-size: 2rem; /* Font size for the heading */
+    color: orange; /* Matches other orange elements on the page */
+    display: inline-block; /* Keeps heading inline */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.footer-socials {
+    display: flex; /* Flexbox layout for social links */
+    justify-content: center; /* Center the items */
+    gap: 40px; /* Space between icons */
+    margin-top: 20px; /* Space above social links */
+}
+
+.social-item {
+    text-align: center; /* Center-align items */
+}
+
+.social-icon {
+    width: 80px; /* Size for social icons */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space below icons */
+    display: block; /* Block display for the icons */
+}
+
+/* Remove underline from links */
+.social-item a {
+    text-decoration: none; /* No underline */
+    color: inherit; /* Inherit text color from parent */
+}
+
+.social-text {
+    margin: 0; /* Remove default margin */
+    font-size: 1.5rem; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+}
+
+/* Change text color on hover */
+.social-item a:hover .social-text {
+    color: inherit; /* Ensure hover color doesn't change if not styled */
+}
+
+/* New contact information styling */
+.footer-contact {
+    margin-top: 20px; /* Space above the contact text */
+    font-size: 20px; /* Font size for the contact text */
+    color: white; /* Text color */
+}
+
+/* Link styles within the footer */
+.footer-contact a {
+    color: orange; /* Change link color to match theme */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer-contact a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive adjustments for the footer */
+@media (max-width: 768px) {
+    .footer-heading {
+        font-size: 1.5rem; /* Smaller heading on mobile */
+    }
+
+    .social-icon {
+        width: 100px; /* Increased icon size for mobile */
+    }
+
+    .footer-socials {
+        flex-direction: column; /* Stack icons vertically on mobile */
+        align-items: center; /* Center align items */
+        gap: 20px; /* Reduce space between stacked items */
+    }
+
+    .social-text {
+        font-size: 20px; /* Adjust font size for mobile if needed */
+        font-weight: bold; /* Ensure text remains bold */
+    }
+
+    .footer-contact {
+        font-size: 20px; /* Adjust font size for mobile if needed */
+    }
+}
+
+    
+
+
+
+
+
+
+</style>
+
