@@ -4,10 +4,13 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview", 
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "astro": "^2.0.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
   }
 }
-
